@@ -1,30 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Cloudinary } from "@cloudinary/url-gen";
+import {
+  LogoImage,
+  IronandClayImage,
+  BionTechImage,
+  NASAPOTDImage,
+  COVIDTrackerImage,
+  ProSCIImage,
+  CCCoffeeImage,
+  PeriodicTableImage,
+} from "../lib/cloudinary";
+import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Home = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "slapathabass",
-    },
-    url: {
-      secure: true,
-    },
-  });
-  const IronandClayImage = cld
-    .image(
-      "https://res.cloudinary.com/slapathabass/image/upload/v1654011348/Deloach-dev/Screen_Shot_2022-05-31_at_10.35.30_AM_xh8apv.png"
-    )
-    .quality("auto")
-    .format("auto");
-  const BionTechImage = cld
-    .image(
-      "https://res.cloudinary.com/slapathabass/image/upload/v1654011939/Deloach-dev/Screen_Shot_2022-05-31_at_10.40.48_AM_isnexo.png"
-    )
-    .quality("auto")
-    .format("auto");
-
   return (
     <div className={styles.container}>
       <Head>
@@ -36,14 +25,41 @@ const Home = () => {
         <meta name="color-scheme" content="dark" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <nav className={styles.nav}>
+        <a
+          className={styles.link}
+          href="https://twitter.com/Slap_a_tha_Bass"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsTwitter />
+        </a>
+        <a
+          className={styles.link}
+          href="https://www.linkedin.com/in/corey-deloach/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsLinkedin />
+        </a>
+        <a
+          className={styles.link}
+          href="https://github.com/Slap-a-tha-Bass"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsGithub />
+        </a>
+      </nav>
       <main className={styles.main}>
-        <h1 className={styles.title}>Hi, I&apos;m <span>Corey DeLoach</span>!</h1>
-        <h1 className={styles.subtitle}>
-          I am a full-stack <span>modern</span> web developer.
+        <h1 className={styles.title}>
+          Hi, I&apos;m <span>Corey DeLoach</span>!
         </h1>
+        <h2 className={styles.subtitle}>
+          I am a full-stack <span>modern</span> web developer.
+        </h2>
         <h3 className={styles.description}>
-          Check out 6 of my most recent projects below:
+          Check out <span>7</span> of my most recent projects below:
         </h3>
         <div style={{ padding: "2rem" }} />
         <div className={styles.grid}>
@@ -55,7 +71,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <h2>Iron &amp; Clay Studio &rarr;</h2>
-                <p>Headless E-commerce site using Next.js and GraphCMS</p>
+                <p>Headless e-commerce site using Next.js and GraphCMS</p>
               </a>
             </div>
             <div>
@@ -90,55 +106,121 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.card}>
-            <a
-              href="https://nasa-potd-xi.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>NASA POTD &rarr;</h2>
-              <p>NASA Picture of the Day</p>
-            </a>
+            <div>
+              <a
+                href="https://nasa-potd-xi.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>NASA POTD &rarr;</h2>
+                <p>NASA Picture of the Day using the open source NASA API</p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={NASAPOTDImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+              />
+            </div>
           </div>
           <div className={styles.card}>
-            <a
-              href="https://covid-tracker-app-seven.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>US COVID Tracker &rarr;</h2>
-              <p>COVID Tracker for the US Data using Covidactnow.org</p>
-            </a>
+            <div>
+              <a
+                href="https://covid-tracker-app-seven.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>US COVID Tracker &rarr;</h2>
+                <p>US COVID Tracker for the US Data using Covidactnow.org</p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={COVIDTrackerImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+              />
+            </div>
           </div>
           <div className={styles.card}>
-            <a
-              href="https://prosci-lab.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>ProSCI Labs &rarr;</h2>
-              <p>Static site for research scientists.</p>
-            </a>
+            <div>
+              <a
+                href="https://prosci-lab.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>ProSCI Labs &rarr;</h2>
+                <p>
+                  Static site for research scientists using styled components
+                </p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={ProSCIImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+              />
+            </div>
           </div>
           <div className={styles.card}>
-            <a
-              href="https://cc-coffee-app.herokuapp.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>C^2 Coffee &rarr;</h2>
-              <p>
-                Old school API CRUD operations for ordering coffee and snacks.
-              </p>
-            </a>
+            <div>
+              <a
+                href="https://periodic-table-vpd7l.ondigitalocean.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>Periodic Table &rarr;</h2>
+                <p>
+                  Periodic table | styled components (landscape mobile view)
+                </p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={PeriodicTableImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+              />
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div>
+              <a
+                href="https://cc-coffee-app.herokuapp.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>C^2 Coffee &rarr;</h2>
+                <p>
+                  Old school API CRUD operations for ordering coffee (long load)
+                </p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={CCCoffeeImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+              />
+            </div>
           </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <p>Copyright © 2022</p>
+        <p>Copyright © 2022 | Corey DeLoach</p>
       </footer>
     </div>
   );
 };
 
 export default Home;
+
+// https://periodic-table-vpd7l.ondigitalocean.app/
