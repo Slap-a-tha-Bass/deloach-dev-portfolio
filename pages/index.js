@@ -11,7 +11,7 @@ import {
   PeriodicTableImage,
 } from "../lib/cloudinary";
 import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
-
+import { BiMailSend } from "react-icons/bi";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -48,6 +48,14 @@ const Home = () => {
           rel="noreferrer"
         >
           <BsGithub />
+        </a>
+        <a
+          className={styles.link}
+          href="mailto:scdeloach16@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BiMailSend />
         </a>
       </nav>
       <main className={styles.main}>
@@ -174,7 +182,7 @@ const Home = () => {
           <div className={styles.card}>
             <div>
               <a
-                href="https://periodic-table-vpd7l.ondigitalocean.app/"
+                href="https://periodic-table-wine.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
