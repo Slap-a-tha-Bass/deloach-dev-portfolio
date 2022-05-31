@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import {
-  LogoImage,
   IronandClayImage,
   BionTechImage,
   NASAPOTDImage,
@@ -80,6 +79,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="Iron & Clay Studio"
               />
             </div>
           </div>
@@ -102,6 +102,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="Bion Tech News"
               />
             </div>
           </div>
@@ -122,6 +123,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="NASA POTD"
               />
             </div>
           </div>
@@ -142,6 +144,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="US COVID Tracker"
               />
             </div>
           </div>
@@ -164,6 +167,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="ProSCI Labs"
               />
             </div>
           </div>
@@ -186,6 +190,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="Periodic Table"
               />
             </div>
           </div>
@@ -208,6 +213,7 @@ const Home = () => {
                 width={300}
                 height={660}
                 className={styles.image}
+                alt="C^2 Coffee"
               />
             </div>
           </div>
@@ -222,5 +228,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// https://periodic-table-vpd7l.ondigitalocean.app/
