@@ -9,6 +9,7 @@ import {
   ProSCIImage,
   CCCoffeeImage,
   PeriodicTableImage,
+  GetflixImage,
 } from "../lib/cloudinary";
 import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
@@ -70,6 +71,27 @@ const Home = () => {
         </h3>
         <div style={{ padding: "2rem" }} />
         <div className={styles.grid}>
+        <div className={styles.card}>
+            <div>
+              <a
+                href="https://getflix-app.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>Getflix Trailers</h2>
+                <p>Headless streaming service built with Next.js and GraphCMS</p>
+              </a>
+            </div>
+            <div>
+              <Image
+                src={GetflixImage.publicID}
+                width={300}
+                height={660}
+                className={styles.image}
+                alt="Getflix Trailers"
+              />
+            </div>
+          </div>
           <div className={styles.card}>
             <div>
               <a
