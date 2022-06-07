@@ -78,8 +78,8 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Getflix Trailers</h2>
-                <p>Headless streaming service built with Next.js and GraphCMS</p>
+                <h2>Getflix Trailers &rarr;</h2>
+                <p>Headless streaming service | Next.js and GraphCMS | Landscape Mode or Desktop</p>
               </a>
             </div>
             <div>
@@ -100,7 +100,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <h2>Iron &amp; Clay Studio &rarr;</h2>
-                <p>Headless e-commerce site using Next.js and GraphCMS</p>
+                <p>Headless e-commerce site | Next.js and GraphCMS | Mobile and Desktop</p>
               </a>
             </div>
             <div>
@@ -122,7 +122,7 @@ const Home = () => {
               >
                 <h2>Bion Tech News &rarr;</h2>
                 <p>
-                  Biotech news source with NextAuth (Github account required)
+                  Biotech news source | NextAuth (Github account required) | Mobile and Desktop
                 </p>
               </a>
             </div>
@@ -144,7 +144,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <h2>NASA POTD &rarr;</h2>
-                <p>NASA Picture of the Day using the open source NASA API</p>
+                <p>NASA Picture of the Day | NASA API | Mobile and Desktop</p>
               </a>
             </div>
             <div>
@@ -165,7 +165,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <h2>US COVID Tracker &rarr;</h2>
-                <p>US COVID Tracker for the US Data using Covidactnow.org</p>
+                <p>US COVID Tracker for the US Data | Covidactnow.org | Landscape Mode or Desktop</p>
               </a>
             </div>
             <div>
@@ -187,7 +187,7 @@ const Home = () => {
               >
                 <h2>ProSCI Labs &rarr;</h2>
                 <p>
-                  Static site for research scientists using styled components
+                  Static site for research scientists | Styled components | Mobile and Desktop
                 </p>
               </a>
             </div>
@@ -210,7 +210,7 @@ const Home = () => {
               >
                 <h2>Periodic Table &rarr;</h2>
                 <p>
-                  Periodic table | styled components (landscape mobile view)
+                  Periodic table | Next.js and styled components | Landscape Mode and Desktop
                 </p>
               </a>
             </div>
@@ -233,7 +233,7 @@ const Home = () => {
               >
                 <h2>C^2 Coffee &rarr;</h2>
                 <p>
-                  Old school API CRUD operations for ordering coffee (long load)
+                  Old school API CRUD | TypeScript and Node.js (long load) | Mobile and Desktop
                 </p>
               </a>
             </div>
