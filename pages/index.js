@@ -67,7 +67,7 @@ const Home = () => {
           I am a full-stack <span>modern</span> web developer.
         </h2>
         <h3 className={styles.description}>
-          Check out <span>7</span> of my most recent projects below:
+          Check out <span>8</span> of my most recent projects below:
         </h3>
         <div style={{ padding: "2rem" }} />
         <div className={styles.grid}>
